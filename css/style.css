@@ -1,0 +1,77 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+
+    /* Colors */
+    --White: hsl(0, 0%, 100%);
+    --LigthGray: hsl(212, 45%, 89%);
+    --GrayishBlue: hsl(220, 15%, 55%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --DarkBlue: hsl(218, 44%, 22%);
+
+    /* fonts */
+    --Outfit-family: "Outfit", sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: var(--Outfit);
+    background-color: var(--LigthGray);
+}
+
+.container {
+    background-color: var(--White);
+    width: 320px;
+    height: 500px;
+    margin: 60px auto;
+    border-radius: 16px;
+    padding: 16px;
+    transition: 300ms;
+}
+
+.container-image {
+    background-image: url(../img/qr.png);
+    background-size: cover;
+    width: 100%;
+    height: 288px;
+    border-radius: 16px;
+    margin-bottom: 24px;
+}
+
+h1 {
+    color: var(--DarkBlue);
+    font-size: 23px;
+    text-align: center;
+    margin: 0 15px;
+    margin-bottom: 24px;
+
+}
+
+p {
+   font-size: 18px;
+   color: var(--GrayishBlue);
+   text-align: center;
+   margin: 0 15px;
+
+}
+
+.container:hover{
+    cursor: pointer;
+    box-shadow: 10px 10px 10px;
+    transition: 300ms;
+    margin-top: 50px;
+}
+
+.atribution{
+    text-align: center;
+    color: var(--DarkBlue);
+}
